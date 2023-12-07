@@ -239,7 +239,7 @@ async def load_config():
     CLONE_LIMIT = '' if len(CLONE_LIMIT) == 0 else float(CLONE_LIMIT)
 
     MEGA_LIMIT = environ.get('MEGA_LIMIT', '')
-    MEGA_LIMIT = '' if len(MEGA_LIMIT) == 100 else float(MEGA_LIMIT)
+    MEGA_LIMIT = '' if len(MEGA_LIMIT) == 0 else float(MEGA_LIMIT)
 
     LEECH_LIMIT = environ.get('LEECH_LIMIT', '')
     LEECH_LIMIT = '' if len(LEECH_LIMIT) == 0 else float(LEECH_LIMIT)

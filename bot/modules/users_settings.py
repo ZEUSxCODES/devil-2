@@ -165,7 +165,7 @@ async def update_user_settings(query, key=None, edit_type=None, edit_mode=None, 
     user_id = query.from_user.id
     thumbnail = f"Thumbnails/{user_id}.jpg"
     if not ospath.exists(thumbnail):
-        thumbnail = 'https://te.legra.ph/file/b700bbbf7329b04f3673a.jpg'
+        thumbnail = 'https://te.legra.ph/file/1ab40c7098fa1cb884f42.jpg'
     await editMessage(query.message, msg, button, thumbnail)
 
 
